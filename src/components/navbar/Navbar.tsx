@@ -19,10 +19,10 @@ const Navbar = () => {
     ];
 
     return (
-        <div className='p-4 relative'>
-            <nav className="flex items-center rounded-full justify-between p-4 px-[60px] bg-[#9F1940] text-[#235789] shadow-md">
+        <div className='p-4 relative bg-[#f2f2f2] h-[100px]'>
+            <nav className="flex items-center rounded-full justify-between p-4 px-[60px] bg-[#9F1940]  text-[#235789] shadow-md">
                 <div className="text-[24px] font-bold text-[#fff]">
-                   <Link href={"/"}> SoftForge</Link></div>
+                   <Link href={"/"}> TechNexus</Link></div>
                 <ul className="hidden md:flex space-x-6 text-[14px] font-medium">
                 <Link href={"/"}> 
                     <li className="cursor-pointer transition navbar-items"><span>H</span><span>o</span><span>m</span><span>e</span></li>

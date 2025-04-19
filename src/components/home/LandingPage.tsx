@@ -1,13 +1,13 @@
 import Button from "@/ui/Button/Button";
-import PrimaryButton from "@/ui/PrimaryButton";
+import PrimaryButton from "@/ui/PrimaryButton/PrimaryButton";
 import SecondaryButton from "@/ui/SecondaryButton/SecondaryButton";
 import React from "react";
 
 const LandingPage = () => {
   return (
-    <div className="bg-[#f2f2f2] min-h-[calc(100vh-100px)] relative">
+    <div className="bg-[#f2f2f2] h-[calc(100vh-100px)] relative">
       {/* Elegant Right Side Design */}
-      <div className="absolute top-0 right-0 w-[40%] h-full bg-[#9f193f] z-10 rounded-tl-[100%] rounded-bl-[100%] flex flex-col items-center justify-center gap-6">
+      <div className="absolute top-0 right-0 bg-pattern w-[40%] h-full z-10 rounded-tl-[100%] rounded-bl-[100%] flex flex-col items-center justify-center gap-6">
         
         {/* Service Tags with Floating Animation */}
         <div className="relative w-full h-full flex items-center justify-center">
@@ -24,14 +24,14 @@ const LandingPage = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="absolute bg-white px-5 py-2 rounded-full shadow-md flex items-center justify-center transition-all duration-300 hover:scale-105 animate-float"
+              className={`absolute bg-white px-5 py-2 rounded-full shadow-md flex items-center justify-center cursor-pointer transition-all  duration-300 hover:scale-105 animate-float hover:motion-preset-seesaw text-[${item.color}] ${item.color == "#9f193f"? "hover:bg-[#28536B] hover:text-white":"hover:bg-[#9f193f] hover:text-white"}`}
               style={{
                 top: item.top,
                 bottom: item.bottom,
                 left: item.left,
                 right: item.right,
                 animationDelay: item.delay,
-                color: item.color,
+                // color: item.color,
               }}
             >
               <h1 className="text-[14px] font-bold ">{item.label}</h1>
@@ -43,10 +43,10 @@ const LandingPage = () => {
       {/* Left Side Content */}
       <section className="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-20">
         <div className="max-w-xl mb-10 md:mb-0">
-          <h1 className="text-[42px] leading-[1.3] font-extrabold text-[#28536B] mb-6">
+          <h1 className="text-[42px] leading-[1.3]  text-[#28536B] mb-6">
           We offer Advanced IT Solutions to Businesses and Industries around the Globe
           </h1>
-          <p className="text-[16px] sm:w-[75%] text-gray-700 mb-6">
+          <p className="text-[16px] sm:w-[75%] text-gray-700 mb-10">
           Our team of experienced developers has won hundreds of clients throughout our years of practice. From refining your idea and prerequisites to writing code, every step is done in close collaboration with you.
 
 

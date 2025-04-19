@@ -1,12 +1,10 @@
-import LandingPage from '@/components/home/LandingPage'
-import ServicesPage from '@/components/services'
+import HomePage from '@/components/home/HomePage'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <LandingPage/>
-      <ServicesPage/>
+      <HomePage />
     </div>
   )
 }
