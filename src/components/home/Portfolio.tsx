@@ -197,12 +197,16 @@ const Portfolio = () => {
 
       {/* View More Button */}
       <div className="text-center mt-12">
-        <button className="px-8 py-3 bg-[#28536B] text-white rounded-full shadow-md hover:bg-[#9f193f] transition-colors duration-300 flex items-center gap-2 mx-auto btn-shimmer">
+        {/* <button className="px-8 py-3 bg-[#28536B] text-white rounded-full shadow-md hover:bg-[#9f193f] transition-colors duration-300 flex items-center gap-2 mx-auto btn-shimmer">
           <span>View All Projects</span>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
-        </button>
+        </button> */}
+
+<a className="inline-flex justify-center gap-5 whitespace-nowrap  text-sm font-medium text-slate-200 dark:text-slate-800 bg-[#9f193f] dark:hover:bg-slate-100  focus:outline-none focus:ring focus:ring-slate-500/50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] dark:before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms] px-8 py-3 rounded-lg btn-glass-morph shadow-[0_3px_10px_rgb(0,0,0,0.2)]" href="#0">View All Projects  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg></a>
       </div>
     </div>
   );

@@ -95,12 +95,10 @@ const ServicesPage = () => {
           </div>
         </div>
         <div className="text-center mt-16">
-          <button className="px-8 py-3 bg-[#9f193f] text-white font-medium rounded-lg hover:bg-[#8a1535] transition-colors shadow-md hover:shadow-lg">
+          {/* <button className="px-8 py-3 bg-[#9f193f] text-white font-medium rounded-lg hover:bg-[#8a1535] transition-colors shadow-md hover:shadow-lg">
             View All Services
-          </button>
-          {/* <SecondaryButtonTwo onClick={() => console.log("Clicked")}>
-            Learn More
-          </SecondaryButtonTwo> */}
+          </button> */}
+            <a className="inline-flex justify-center gap-5 whitespace-nowrap  text-sm font-medium text-slate-200 dark:text-slate-800 bg-[#9f193f] dark:hover:bg-slate-100  focus:outline-none focus:ring focus:ring-slate-500/50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] dark:before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms] px-8 py-3 rounded-lg btn-glass-morph shadow-[0_3px_10px_rgb(0,0,0,0.2)]" href="#0">View All Services</a>
         </div>
       </section>
     </div>
