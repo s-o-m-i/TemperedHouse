@@ -173,10 +173,10 @@ const Portfolio = () => {
 
       {/* Category Filter Slider */}
       <div className="flex justify-center mb-16">
-        <div className="relative bg-[#9f193f] rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-2 max-w-3xl mx-auto">
+        <div className="relative bg-gray-50 rounded-full shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-2 max-w-3xl mx-auto">
           {/* The sliding background */}
           <div 
-            className="absolute bg-[#FFF8EF] h-[85%] rounded-full transition-all duration-300 ease-in-out shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] z-10"
+            className="absolute bg-[#9f193f] h-[85%] rounded-full transition-all duration-300 ease-in-out shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] z-10"
             style={{ 
               left: `${sliderPosition.left}px`, 
               width: `${sliderPosition.width}px`,
@@ -196,8 +196,8 @@ const Portfolio = () => {
                 onClick={() => handleCategoryChange(category.id, index)}
                 className={`px-6 py-1 rounded-full relative z-20 transition-all duration-300 ${
                   activeCategory === category.id
-                    ? 'text-[#000] font-medium scale-105'
-                    : 'text-[#fff] hover:text-[#9f193f]'
+                    ? 'text-[#fff] font-medium scale-105'
+                    : 'text-[#000] hover:text-[#9f193f]'
                 }`}
               >
                 {category.name}
@@ -212,7 +212,7 @@ const Portfolio = () => {
         {filteredProjects.map((project, index) => (
           <div 
             key={project.id} 
-            className={`bg-[#fff] rounded-4xl overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl`}
+            className={`bg-gray-50 rounded-4xl overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl`}
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
               {/* Image side - changes based on even/odd */}
