@@ -53,7 +53,7 @@ const WhyUs = () => {
 
         {/* Right Side */}
         <div>
-          <h2 className="text-3xl sm:text-4xl font-bold  mb-4">Why Choose Us</h2>
+          <h2 className="text-3xl sm:text-4xl  text-[#04213F] font-bold mb-4">Why Choose Us</h2>
           <p className=" mb-10">
             Take your businesses and organizations to another level by taking our development and design services by adding automatic and easy user experiences to your existing structures and new start-ups.
           </p>
@@ -62,7 +62,7 @@ const WhyUs = () => {
             {reasons.map((reason, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-2xl p-5  relative transition-colors duration-300 shadow-lg overflow-hidden"
+                className="group bg-gray-50 rounded-2xl p-5  relative transition-colors duration-300 shadow-sm overflow-hidden"
               >
                 <div className="absolute group-hover:w-[100%] transition-all duration-300 ease-in-out group-hover:rounded-[0px] group-hover:h-full w-[50px] rounded-[50%] z-[1px] top-0 right-0 h-[50px] bg-[#9f193f]"></div>
                 <div className="mb-4 relative">{reason.icon}</div>

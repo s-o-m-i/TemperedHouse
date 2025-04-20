@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PrimaryButton = () => {
+const PrimaryButton = ({text}:{text: string}) => {
     return (
         <div className='relative group'>
             <div className="box absolute top-0 left-0 rounded-bl-full rounded-tr-full rotate-1 group-hover:hidden transition-all duration-300 ease-in-out h-[50px] w-full bg-[#9f193f]">
@@ -14,7 +14,7 @@ const PrimaryButton = () => {
                 <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#9f193f] group-hover:h-full ease"></span>
                 <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#9f193f] group-hover:h-full ease"></span>
                 <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gradient-to-r from-[#9f193f] from-20% via-[#9f193f] via-40% to-[#9f193f] to-70% opacity-0 group-hover:opacity-40"></span>
-                <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease flex items-center w-full text-[12px] sm:text-[16px]">Get Consultation</span>
+                <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease flex items-center w-full text-[12px] sm:text-[16px]">{text}</span>
             </button>
         </div>
     );

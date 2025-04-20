@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
     // Disable ESLint during build
     ignoreDuringBuilds: true,
   },
+  images: {
+    domains: ['images.unsplash.com'],
+  },
 };
 
 export default nextConfig;

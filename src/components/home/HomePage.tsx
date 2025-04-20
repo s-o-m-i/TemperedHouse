@@ -9,6 +9,7 @@ import OurTeam from './OurTeam';
 import AboutCompany from './AboutCompany';
 import WayOfBuilding from './WayOfBuilding';
 import CallToAction from './CallToAction';
+import WayOfBuildingTwo from './WayOfBuildingTwo';
 
 const HomePage = () => {
   return (
@@ -18,10 +19,12 @@ const HomePage = () => {
       <ServicesPage/>
       <CallToAction/>
       <WhyUs />
+      {/* <WayOfBuildingTwo/> */}
       <WayOfBuilding/>
       {/* <OurTeam/> */}
+      
       <Portfolio />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <CTA />
     </div>
   );

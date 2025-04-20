@@ -43,7 +43,7 @@ const LandingPage = () => {
       {/* Left Side Content */}
       <section className="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-20">
         <div className="max-w-xl mb-10 md:mb-0">
-          <h1 className="text-[42px] leading-[1.3]  text-[#28536B] mb-6">
+          <h1 className="text-[42px] leading-[1.3] font-bold text-[#04213F] mb-6">
           We offer Advanced IT Solutions to Businesses and Industries around the Globe
           </h1>
           <p className="text-[16px] sm:w-[75%] text-gray-700 mb-10">
@@ -53,7 +53,7 @@ const LandingPage = () => {
 
           </p>
           <div className="flex items-center gap-5">
-          <PrimaryButton/>
+          <PrimaryButton text={"Get Consultation"}/>
           <Button />
           {/* <SecondaryButton/> */}
           </div>

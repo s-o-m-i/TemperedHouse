@@ -27,6 +27,9 @@ const Navbar = () => {
                 <Link href={"/"}> 
                     <li className="cursor-pointer transition navbar-items"><span>H</span><span>o</span><span>m</span><span>e</span></li>
                     </Link>
+                <Link href={"/about"}> 
+                    <li className="cursor-pointer transition navbar-items"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></li>
+                    </Link>
                 <Link href={"/services"}> 
                     <li 
                         className="cursor-pointer transition navbar-items relative"

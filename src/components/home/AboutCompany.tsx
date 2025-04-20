@@ -5,7 +5,7 @@ const AboutCompany = () => {
     return (
         <div>
             <section className="py-20 px-8 md:px-16 bg-white">
-                <h2 className='text-[32px] sm:text-[42px] text-[#28536B]  text-center'>About Company</h2>
+                <h2 className='text-[32px] sm:text-[42px] font-bold text-[#04213F]  text-center'>About Company</h2>
                  {/* <div className="w-24 h-1 mt-6 bg-[#9f193f] mx-auto mb-6"></div> */}
                 <p className='text-base text-gray-600  mt-5 text-center'>At LLC, our values form the foundation of our organization and guide our actions. We believe in upholding the highest standards of integrity, delivering exceptional service, and embracing innovation. These values define our culture and shape the way we work together to achieve our goals.</p>
                 <div className="list pt-[80px]">

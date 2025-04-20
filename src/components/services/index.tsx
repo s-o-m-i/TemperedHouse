@@ -1,4 +1,5 @@
 "use client"
+import PrimaryButton from '@/ui/PrimaryButton/PrimaryButton'
 import SecondaryButtonTwo from '@/ui/SecondaryButtonTwo/SecondaryButtonTwo'
 import React from 'react'
 
@@ -8,7 +9,7 @@ const ServicesPage = () => {
       <section className="py-20 px-8 md:px-16 bg-white">
         <div className="text-center mb-20">
           <span className="inline-block px-3 py-1 bg-[#9f193f]/10 text-[#9f193f] rounded-full text-sm font-medium mb-4">OUR EXPERTISE</span>
-          <h2 className="text-[32px] sm:text-[42px]   text-[#28536B] mb-6">Services We Deliver</h2>
+          <h2 className="text-[32px] sm:text-[42px] font-bold  text-[#04213F] mb-6">Services We Deliver</h2>
           {/* <div className="w-24 h-1 bg-[#9f193f] mx-auto mb-6"></div> */}
           <p className="text-[16px] text-gray-600 max-w-2xl mx-auto">
             We provide comprehensive technology solutions tailored to accelerate your business growth
@@ -98,7 +99,10 @@ const ServicesPage = () => {
           {/* <button className="px-8 py-3 bg-[#9f193f] text-white font-medium rounded-lg hover:bg-[#8a1535] transition-colors shadow-md hover:shadow-lg">
             View All Services
           </button> */}
-            <a className="inline-flex justify-center gap-5 whitespace-nowrap  text-sm font-medium text-slate-200 dark:text-slate-800 bg-[#9f193f] dark:hover:bg-slate-100  focus:outline-none focus:ring focus:ring-slate-500/50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] dark:before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms] px-8 py-3 rounded-lg btn-glass-morph shadow-[0_3px_10px_rgb(0,0,0,0.2)]" href="#0">View All Services</a>
+            {/* <a className="inline-flex justify-center gap-5 whitespace-nowrap  text-sm font-medium text-slate-200 dark:text-slate-800 bg-[#9f193f] dark:hover:bg-slate-100  focus:outline-none focus:ring focus:ring-slate-500/50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] dark:before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms] px-8 py-3 rounded-lg btn-glass-morph shadow-[0_3px_10px_rgb(0,0,0,0.2)]" href="#0">View All Services</a> */}
+            <div className="flex items-center justify-center ">
+            <PrimaryButton text={"View All Services"}/>
+        </div>
         </div>
       </section>
     </div>

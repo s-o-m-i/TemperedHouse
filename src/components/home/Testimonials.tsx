@@ -114,7 +114,7 @@ const Testimonials = () => {
           </p>
           
           {/* Stats Bar */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-12 bg-white rounded-xl shadow-lg py-5 px-2">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 bg-white rounded-xl shadow-lg py-5 px-2">
             {stats.map((stat, index) => (
               <div key={index} className="text-center p-2">
                 <div className="text-[#9f193f] font-bold text-3xl">{stat.value}</div>

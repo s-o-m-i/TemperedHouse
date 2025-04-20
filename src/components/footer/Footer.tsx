@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-linear-grad text-white mt-16 relative">
+    <footer className="bg-[#9f193f] text-white relative">
       {/* Main Footer Content */}
       <div className="container mx-auto px-8 md:px-16 pt-16 pb-16">
         <div className="max-w-7xl mx-auto">
@@ -222,26 +222,24 @@ const Footer = () => {
       </div>
       
       {/* Bottom Copyright Section */}
-      <div className='p-4'>
-      <div className="bg-linear-grad py-6 rounded-full">
+      <div className="bg-[#9f193f] py-6">
         <div className="container mx-auto px-8 md:px-16 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-gray-400 text-sm mb-4 md:mb-0">
+          <div className="text-white text-sm mb-4 md:mb-0">
             © {currentYear} <span className="text-white font-medium">TechNexus</span>. All rights reserved.
           </div>
           <div className="flex space-x-8">
-            <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
+            <Link href="/privacy-policy" className="text-white hover:text-white text-sm transition-colors duration-300">
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
+            <Link href="/terms-of-service" className="text-white hover:text-white text-sm transition-colors duration-300">
               Terms of Service
             </Link>
-            <Link href="/sitemap" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
+            <Link href="/sitemap" className="text-white hover:text-white text-sm transition-colors duration-300">
               Sitemap
             </Link>
           </div>
         </div>
       </div>
-      </div> 
     </footer>
   );
 };

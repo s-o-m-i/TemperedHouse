@@ -4,7 +4,7 @@ import Button from '@/ui/Button/Button';
 
 const CTA = () => {
   return (
-    <div className="relative bg-[#28536B] py-20 px-8 md:px-16 overflow-hidden">
+    <div className="relative bg-[#9f193f] py-20 px-8 md:px-16 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
         <div className="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-[#9f193f] opacity-10"></div>
@@ -39,14 +39,14 @@ const CTA = () => {
             </div>
             
             <div className="flex flex-wrap gap-5">
-              <PrimaryButton />
+              <PrimaryButton text='Get Consultation'/>
               <Button />
             </div>
           </div>
           
           {/* Right Form */}
           <div className="bg-white rounded-lg shadow-lg p-8 relative">
-            <div className="absolute -top-4 -right-4 bg-[#9f193f] text-white px-6 py-2 rounded-full font-bold shadow-md">
+            <div className="absolute -top-4 -right-4 bg-[#28536B] text-white px-6 py-2 rounded-full font-bold shadow-md">
               Contact Us
             </div>
             <h3 className="text-2xl font-bold text-[#28536B] mb-6">Get Started Today</h3>
