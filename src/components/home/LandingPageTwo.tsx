@@ -1,5 +1,5 @@
 import Button from "@/ui/Button/Button";
-import PrimaryButton from "@/ui/PrimaryButton/PrimaryButton";
+
 import React from "react";
 
 const LandingPage = () => {
@@ -15,7 +15,7 @@ const LandingPage = () => {
             We craft fast, modern, and scalable software tailored for your business needs.
           </p>
           <div className="flex items-center gap-5">
-          <PrimaryButton/>
+          {/* <PrimaryButton /> */}
           <Button />
           {/* <SecondaryButton/> */}
           </div>
