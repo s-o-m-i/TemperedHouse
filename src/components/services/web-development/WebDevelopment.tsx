@@ -6,12 +6,11 @@ import React from 'react';
 const WebDevelopment = () => {
     return (
         <div className='bg-[#9f193f]  relative rounded-md '>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12  ">
-            <section className="flex flex-col md:flex-row mt-32 justify-between px-8 md:px-16 ">
-                <div className="max-w-xl mb-10 md:mb-0">
+        <div className="grid grid-cols-1 md:grid-cols-2   px-8 md:px-16">
+            <section className="flex flex-col md:flex-row mt-32 justify-between  ">
+                <div className=" mb-10 md:mb-0">
                     <h1 className="text-[42px] leading-[1.3] font-bold text-[#fff]  mb-6">
                         Web Development Services For Online Success
-                        e
                     </h1>
                     <p className="text-[16px] sm:w-[75%] text-white mb-10">
                         Design and scale custom, high-performing web solutions that engage users and deliver seamless experience at every touchpoint. At TekRevol, our web development services help businesses amplify their online presence with modern, user-first innovation.

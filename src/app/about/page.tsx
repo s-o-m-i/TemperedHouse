@@ -4,6 +4,7 @@ import OurMission from '@/components/about/OurMission';
 import OurTeam from '@/components/home/OurTeam';
 import CoreValues from '@/components/about/CoreValues';
 import OurJourney from '@/components/about/OurJourney';
+import AboutServices from '@/components/about/AboutServices';
 
 export const metadata = {
   title: 'About Us | TechNexus',
@@ -14,6 +15,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       <AboutHero />
+      <AboutServices/>
       <OurMission />
       <CoreValues />
       <OurJourney />
