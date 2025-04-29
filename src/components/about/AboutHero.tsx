@@ -1,43 +1,31 @@
+import Button from '@/ui/Button/Button';
+import PrimaryButton from '@/ui/PrimaryButton/PrimaryButton';
+import Image from 'next/image';
 import React from 'react';
 
 const AboutHero = () => {
   return (
-    <div className="bg-[#28536B] relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 right-0 w-[60%] h-[60%] bg-[#9f193f] rounded-bl-[100%]"></div>
-        <div className="absolute bottom-0 left-0 w-[60%] h-[60%] bg-[#9f193f] rounded-tr-[100%]"></div>
-      </div>
-      
-      <div className="container mx-auto px-8 md:px-16 py-32 relative z-10">
-        <div className="max-w-3xl">
-          <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-full text-sm font-medium mb-6">
-            About TechNexus
-          </span>
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-            Transforming Businesses Through Technology
+    <section className=" bg-[#9f193f] grid grid-cols-2 py-20 px-8 md:px-16  relative rounded-t-md">
+      <div className="flex flex-col md:flex-row items-center justify-between  ">
+        <div className="max-w-xl mb-10 md:mb-0">
+          <h1 className="text-[42px] leading-[1.3] font-bold text-[#fff] mb-6">
+            Transforming Visions into Digital Excellence 
           </h1>
-          <p className="text-xl text-white/80 mb-8 max-w-2xl">
-            We're a team of passionate developers, designers, and digital strategists committed to helping businesses thrive in the digital landscape.
+          <p className="text-[16px] sm:w-[75%] text-white mb-10">
+            We are a software house dedicated to delivering innovative and reliable technology solutions. Our expert team is driven by a passion for solving complex challenges, leveraging the latest advancements to help businesses succeed. We value quality, collaboration, and client satisfaction, striving to exceed expectations in everything we do.
           </p>
-          
-          <div className="flex flex-wrap gap-4 mt-10">
-            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-5 py-3">
-              <div className="text-3xl font-bold text-white mr-2">12+</div>
-              <div className="text-white/80">Years of Experience</div>
-            </div>
-            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-5 py-3">
-              <div className="text-3xl font-bold text-white mr-2">150+</div>
-              <div className="text-white/80">Projects Completed</div>
-            </div>
-            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-5 py-3">
-              <div className="text-3xl font-bold text-white mr-2">35+</div>
-              <div className="text-white/80">Team Members</div>
-            </div>
+          <div className="flex items-center gap-5">
+            <PrimaryButton text={"Get Consultation"} />
+            <Button />
+            {/* <SecondaryButton/> */}
           </div>
         </div>
       </div>
-    </div>
+      <div className="flex items-center justify-center">
+        <Image width={400} height={400} src="/images/aboutus.jpg" className='rounded-full' alt="about us"/>
+      </div>
+
+    </section>
   );
 };
 

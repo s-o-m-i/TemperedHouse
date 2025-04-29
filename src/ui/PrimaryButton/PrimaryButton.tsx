@@ -1,6 +1,11 @@
 import React from 'react';
 
-const PrimaryButton = ({text}:{text: string}) => {
+
+export interface PrimaryButtonProps {
+    text: string
+}
+
+const PrimaryButton: React.FC<PrimaryButtonProps> = ({text}) => {
     return (
         <div className='relative group'>
             <div className="box absolute top-0 left-0 rounded-bl-full rounded-tr-full rotate-1 group-hover:hidden transition-all duration-300 ease-in-out h-[50px] w-full bg-[#9f193f]">

@@ -7,15 +7,15 @@ const Navbar = () => {
 
     // Services list for dropdown
     const services = [
-        { name: "Web Development", description: "Custom, responsive websites and applications" },
-        { name: "Mobile App Development", description: "iOS and Android applications" },
-        { name: "UI/UX Design", description: "Intuitive, user-centered interfaces" },
-        { name: "Cloud Computing", description: "Scalable infrastructure solutions" },
-        { name: "Cybersecurity", description: "Protection against digital threats" },
-        { name: "Digital Marketing", description: "Strategic online marketing campaigns" },
-        { name: "SEO", description: "Search engine visibility enhancement" },
-        { name: "AI & Machine Learning", description: "Intelligent automation solutions" },
-        { name: "Blockchain", description: "Secure distributed ledger technology" }
+        { name: "Web Development", description: "Custom, responsive websites and applications" ,path:"/services/web-development"},
+        { name: "Mobile App Development", description: "iOS and Android applications" ,path:"/services/web-development"},
+        { name: "UI/UX Design", description: "Intuitive, user-centered interfaces" ,path:"/services"},
+        { name: "Cloud Computing", description: "Scalable infrastructure solutions" ,path:"/services"},
+        { name: "Cybersecurity", description: "Protection against digital threats" ,path:"/services"},
+        { name: "Digital Marketing", description: "Strategic online marketing campaigns" ,path:"/services"},
+        { name: "SEO", description: "Search engine visibility enhancement" ,path:"/services"},
+        { name: "AI & Machine Learning", description: "Intelligent automation solutions" ,path:"/services"},
+        { name: "Blockchain", description: "Secure distributed ledger technology",path:"/services" }
     ];
 
     return (
@@ -76,9 +76,9 @@ const Navbar = () => {
                     </div> */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {services.map((service, index) => (
-                            <a 
+                            <Link
                                 key={index} 
-                                href="#" 
+                                href={service.path} 
                                 className="flex items-start p-4 rounded-lg hover:bg-gray-50 transition-colors group"
                             >
                                 <div className="ml-4">
@@ -89,7 +89,7 @@ const Navbar = () => {
                                         {service.description}
                                     </p>
                                 </div>
-                            </a>
+                            </Link>
                         ))}
                     </div>
                     <div className="text-center mt-6">
