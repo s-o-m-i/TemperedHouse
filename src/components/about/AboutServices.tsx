@@ -13,7 +13,7 @@ const AboutServices = () => {
                 </div>
                 <div className="mt-20 grid grid-cols-3 gap-5">
                     {AboutWhyUsFeatures.map((card, index) => (
-                        <div className=" bg-gray-50 p-2 linear border-l-2 shadow-sm hover:shadow-lg border-[#9F1940] transition-all duration-300 ease-in-out ">
+                        <div className=" bg-gray-50 p-4 linear border-l-2 shadow-sm hover:shadow-lg border-[#9F1940] transition-all duration-300 ease-in-out ">
                             <div className="question group">
                                 <h4 className=''>01.</h4>
                                 <h3 className='text-xl font-semibold'>{card.title}</h3>
