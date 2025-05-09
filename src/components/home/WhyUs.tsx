@@ -66,8 +66,8 @@ const WhyUs = () => {
               >
                 <div className="absolute group-hover:w-[100%] transition-all duration-300 ease-in-out group-hover:rounded-[0px] group-hover:h-full w-[50px] rounded-[50%] z-[1px] top-0 right-0 h-[50px] bg-[#9f193f]"></div>
                 <div className="mb-4 relative">{reason.icon}</div>
-                <h4 className="font-semibold  relative text-lg mb-2 group-hover:">{reason.title}</h4>
-                <p className="text-sm relative ">{reason.description}</p>
+                <h4 className="font-semibold  relative text-lg mb-2 group-hover:text-white">{reason.title}</h4>
+                <p className="text-sm relative group-hover:text-white">{reason.description}</p>
               </div>
             ))}
           </div>

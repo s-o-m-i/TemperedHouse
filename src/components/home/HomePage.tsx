@@ -10,13 +10,14 @@ import AboutCompany from './AboutCompany';
 import WayOfBuilding from './WayOfBuilding';
 import CallToAction from './CallToAction';
 import WayOfBuildingTwo from './WayOfBuildingTwo';
+import HomeServices from './HomeServices';
 
 const HomePage = () => {
   return (
     <div className="min-h-screen">
       <LandingPage />
       <AboutCompany/>
-      <ServicesPage/>
+      <HomeServices/>
       <CallToAction/>
       <WhyUs />
       {/* <WayOfBuildingTwo/> */}
