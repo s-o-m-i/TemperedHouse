@@ -24,7 +24,7 @@ export default function AboutPage() {
       <BelieveSection/>
       <AboutServices/>
       <CoreValues />
-      <TestimonialsSlider/>
+      {/* <TestimonialsSlider/> */}
       <WayAreWeUnique />
       <CallToAction/>
       {/* <OurJourney /> */}
