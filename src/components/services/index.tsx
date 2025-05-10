@@ -41,12 +41,11 @@ const Services = () => {
                 </div>
                 <Button text={"Explore"} />
               </div>
-              <div className="bg-[#9F193F] p-4 rounded-lg mt-5 text-center cursor-pointer">
+              <div className="bg-[#9F193F] p-4 hover:bg-[#7E1C32] rounded-lg mt-5 text-center cursor-pointer">
                 <h3 className='text-white'>Book a call</h3>
               </div>
     
             </div>
-    
           ))}
         </div>
       </div>

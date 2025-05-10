@@ -3,7 +3,7 @@ import React from 'react'
 interface RegularCardProps {
     title: string;
     desc: string;
-    icon: any;
+    icon?: any;
 }
 
 const RegularCard: React.FC<RegularCardProps> = ({ title, desc,icon }) => {
