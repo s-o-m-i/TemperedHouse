@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import AboutHero from '@/components/about/AboutHero';
 import OurTeam from '@/components/home/OurTeam';
