@@ -1,4 +1,3 @@
-
 import React from 'react';
 import AboutHero from '@/components/about/AboutHero';
 import OurTeam from '@/components/home/OurTeam';
@@ -7,10 +6,16 @@ import OurJourney from '@/components/about/OurJourney';
 import AboutServices from '@/components/about/AboutServices';
 import WayAreWeUnique from '@/components/about/WayAreWeUnique';
 import OurStory from '@/components/about/OurStory';
-import TestimonialsSlider from '../../components/about/TestimonialsSlider';
-import BelieveSection from '@/components/about/BelieveSection';
+// import TestimonialsSlider from '../../components/about/TestimonialsSlider';
+// import BelieveSection from '@/components/about/BelieveSection';
 import CallToAction from '@/components/home/CallToAction';
-
+import dynamic from 'next/dynamic';
+const TestimonialsSlider = dynamic(() => import('../../components/about/TestimonialsSlider'), {
+  ssr: false,
+});
+const BelieveSection = dynamic(() => import('@/components/about/BelieveSection'), {
+  ssr: false,
+});
 export const metadata = {
   title: 'About Us | TechNexus',
   description: 'Learn about TechNexus - our story, mission, values and the team behind our innovative IT solutions.',
@@ -24,7 +29,7 @@ export default function AboutPage() {
       <BelieveSection/>
       <AboutServices/>
       <CoreValues />
-      {/* <TestimonialsSlider/> */}
+      <TestimonialsSlider/>
       <WayAreWeUnique />
       <CallToAction/>
       {/* <OurJourney /> */}

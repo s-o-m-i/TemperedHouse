@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -89,6 +89,10 @@ const Testimonials = () => {
       }
     }
   };
+
+  // useEffect(() => {
+  //   goToSlide
+  // },[])
 
   return (
     <div className="bg-gradient-to-b from-white to-[#f8f8f8] py-24 px-8 md:px-16 relative overflow-hidden">
