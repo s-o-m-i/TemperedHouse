@@ -11,11 +11,11 @@ const BelieveSection = dynamic(() => import('./BelieveSection'), {
 });
 const Hello = () => {
   return (
-  <>
-  <BelieveSection/>
-      <AboutServices/>
-        <CoreValues />
-  <TestimonialsSlider/></>
+    <>
+      <BelieveSection />
+      <AboutServices />
+      <CoreValues />
+      <TestimonialsSlider /></>
   )
 }
 

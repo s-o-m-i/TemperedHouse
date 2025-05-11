@@ -1,4 +1,6 @@
+import CallToAction from '@/components/home/CallToAction'
 import InfiniteScrollCompanies from '@/components/InfiniteScrollCompanies/InfiniteScrollCompanies'
+import WDPortfolio from '@/components/services/web-development/WDPortfolio'
 import WebDevelopment from '@/components/services/web-development/WebDevelopment'
 import WPFAQS from '@/components/services/web-development/WPFAQS'
 import WPForMultiChannel from '@/components/services/web-development/WPForMultiChannel'
@@ -14,12 +16,14 @@ const page = () => {
     <div>
       <WebDevelopment />
       <WPWhyChooseUs />
-      <WPOurServices/>
       <WPIdeal/>
+      <WPOurServices/>
       <WPProcess/>
       <WPTechStack/>
+      <WDPortfolio/>
       <WPForMultiChannel />
       <WPFAQS/>
+      <CallToAction desc='Join us in your digital journey and be the next success story!'/>
     </div>
   )
 }

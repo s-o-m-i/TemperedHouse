@@ -18,14 +18,14 @@ const HomePage = () => {
       <LandingPage />
       <AboutCompany/>
       <HomeServices/>
-      <CallToAction/>
       <WhyUs />
       {/* <WayOfBuildingTwo/> */}
       <WayOfBuilding/>
       {/* <OurTeam/> */}
       
       <Portfolio />
-      {/* <Testimonials /> */}
+      <Testimonials />
+      <CallToAction/>
       <CTA />
     </div>
   );
