@@ -8,7 +8,7 @@ const Navbar = () => {
     // Services list for dropdown
     const services = [
         { name: "Web Development", description: "Custom, responsive websites and applications" ,path:"/services/web-development"},
-        { name: "Mobile App Development", description: "iOS and Android applications" ,path:"/services/web-development"},
+        { name: "Mobile App Development", description: "iOS and Android applications" ,path:"/services/mobile-app-development"},
         { name: "UI/UX Design", description: "Intuitive, user-centered interfaces" ,path:"/services"},
         { name: "Cloud Computing", description: "Scalable infrastructure solutions" ,path:"/services"},
         { name: "Cybersecurity", description: "Protection against digital threats" ,path:"/services"},

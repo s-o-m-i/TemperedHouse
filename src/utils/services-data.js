@@ -30,6 +30,12 @@ const services = [
       service: "SEO Services",
       desc: "Rank higher on search engines with optimized content and technical fixes.",
       startingPrice: "$300"
+    },
+    {
+      icon: <MdOutlineWeb color="white" fontSize={40} />,
+      service: "Graphic Designing",
+      desc: "Rank higher on search engines with optimized content and technical fixes.",
+      startingPrice: "$300"
     }
   ];
   

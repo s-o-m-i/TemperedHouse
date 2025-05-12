@@ -2,42 +2,84 @@
 import Button from '@/ui/Button/Button';
 import PrimaryButton from '@/ui/PrimaryButton/PrimaryButton';
 import Image from 'next/image';
-import React from 'react';
-import Lottie from "lottie-react";
-import eyeLottie from "../../utils/eyes-lottie.json";
-import bulbLottie from "../../utils/bulb-lottie.json";
+import React, { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const AboutHero = () => {
+  const container = useRef(null);
+
+  gsap.registerPlugin(useGSAP);
+
+  useGSAP(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".hero-title", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+      });
+
+      gsap.from(".hero-desc", {
+        y: 50,
+        opacity: 0,
+        delay: 0.3,
+        duration: 1,
+        ease: "power3.out",
+      });
+
+      gsap.from(".hero-buttons", {
+        y: 50,
+        opacity: 0,
+        delay: 0.6,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.2,
+      });
+
+      gsap.from(".hero-image", {
+        scale: 0.8,
+        opacity: 0,
+        delay: 0.8,
+        duration: 1,
+        ease: "power3.out",
+      });
+    }, container);
+
+    return () => ctx.revert(); // cleanup
+  }, []);
+
   return (
-    <section className=" bg-pattern grid grid-cols-2 py-20 px-8 md:px-16 h-[cacl(100vh-100px)] relative rounded-t-md">
-      <div className="flex flex-col md:flex-row items-center justify-between  ">
-        <div className="max-w-xl mb-10 md:mb-0">
-          <h1 className="text-[42px] leading-[1.3] font-bold text-[#fff] mb-6">
-            Transforming Visions into Digital Excellence 
-          </h1>
-          <p className="text-[16px] sm:w-[75%] text-white mb-10">
-            We are a software house dedicated to delivering innovative and reliable technology solutions. Our expert team is driven by a passion for solving complex challenges, leveraging the latest advancements to help businesses succeed. We value quality, collaboration, and client satisfaction, striving to exceed expectations in everything we do.
-          </p>
-          <div className="flex items-center gap-5">
-            <PrimaryButton text={"Get Consultation"} />
-            <Button />
-            {/* <SecondaryButton/> */}
-          </div>
+    <section
+      ref={container}
+      className="bg-pattern grid grid-cols-1 md:grid-cols-2 py-20 px-8 md:px-16 h-auto relative rounded-t-md"
+    >
+      <div className="flex flex-col justify-center">
+        <h1 className="hero-title text-[42px] leading-[1.3] font-bold text-white mb-6">
+          Transforming Visions into Digital Excellence
+        </h1>
+        <p className="hero-desc text-[16px] text-white mb-10 max-w-[75%]">
+          We are a software house dedicated to delivering innovative and reliable
+          technology solutions. Our expert team is driven by a passion for solving
+          complex challenges, leveraging the latest advancements to help businesses
+          succeed.
+        </p>
+        <div className="hero-buttons flex items-center gap-5">
+          <PrimaryButton text="Get Consultation" />
+          <Button />
         </div>
       </div>
-      <div className="flex items-center justify-center relative">
-        <Image width={400} height={400} src="/images/developer.png" className='' alt="about us"/>
-        {/* <div className="bg-white  rounded-full w-[100px] h-[100px] absolute top-[10px] left-[230px] flex items-center justify-center ">
-        <Lottie style={{ width: 200, height: 200 }} className='' animationData={bulbLottie} loop={true} />
-        </div>
-        <div className="w-[50px] h-[50px] bg-[#28536B] rounded-full">
-
-        </div>
-        <Lottie style={{ width: 200, height: 200,color:"white" }} animationData={eyeLottie} loop={true} /> */}
+      <div className="flex items-center justify-center mt-10 md:mt-0">
+        <Image
+          width={400}
+          height={400}
+          src="/images/developer.png"
+          className="hero-image"
+          alt="about us"
+        />
       </div>
-
     </section>
   );
 };
 
-export default AboutHero; 
+export default AboutHero;

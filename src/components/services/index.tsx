@@ -2,13 +2,20 @@
 import Button from '@/ui/Button/Button'
 import PrimaryButton from '@/ui/PrimaryButton/PrimaryButton'
 import SecondaryButtonTwo from '@/ui/SecondaryButtonTwo/SecondaryButtonTwo'
-import React from 'react'
+import React, { useRef } from 'react'
 import services from "../../utils/services-data.js"
 import Lottie from "lottie-react";
 import servicesLottie from "../../utils/services.json";
 import CTA from '../home/CTA.jsx'
 import CallToAction from '@/components/home/CallToAction';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
 const Services = () => {
+
+    const container = useRef(null);
+  
+    gsap.registerPlugin(useGSAP);
   return (
     <div>
       <section className="py-20 px-8 md:px-16 bg-pattern h-screen grid grid-cols-2 gap-8">
@@ -31,27 +38,34 @@ const Services = () => {
         <div className="services mt-20">
           <div className="grid grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="service-card w-full p-8 rounded-lg bg-gray-50 shadow-sm sm:shadow-md">
-                <div className="flex justify-center">
-                  <div className="icon-box bg-[#9F193F] mb-5 w-[80px] h-[80px] flex items-center justify-center rounded-full">
-                    {service.icon}
-                  </div>
-                </div>
-                <h3 className='text-center text-2xl'>{service.service}</h3>
-                <p className="text-[16px] text-gray-700   mt-5 text-center">
-                  {service.desc
-                  }              </p>
-                <div className="flex items-center justify-between mt-8">
-                  <div className="">
-                    <h4 className='text-gray-700'>Starts at Price: <span className='font-bold'>{service.startingPrice}</span></h4>
-                  </div>
-                  <Button text={"Explore"} />
-                </div>
-                <div className="bg-[#9F193F] p-4 hover:bg-[#7E1C32] rounded-lg mt-5 text-center cursor-pointer">
-                  <h3 className='text-white'>Book a call</h3>
-                </div>
-
-              </div>
+             <div
+             key={index}
+             className="service-card w-full p-6 sm:p-8 rounded-2xl bg-[#F9FAFB] border border-gray-200 shadow transition-shadow hover:shadow-lg"
+           >
+             <div className="flex justify-center">
+               <div className="icon-box bg-[#9F193F] mb-6 w-20 h-20 flex items-center justify-center rounded-full shadow-md hover:scale-105 transition-transform duration-300">
+                 {service.icon}
+               </div>
+             </div>
+           
+             <h3 className="text-center text-2xl font-semibold text-[#04213F]">{service.service}</h3>
+           
+             <p className="text-base text-gray-600 mt-4 text-center leading-relaxed">{service.desc}</p>
+           
+             <div className="flex items-center justify-between mt-8">
+               <div>
+                 <h4 className="text-sm text-gray-700">
+                   Starts at: <span className="font-bold text-[#9F193F]">{service.startingPrice}</span>
+                 </h4>
+               </div>
+               <Button text="Explore" />
+             </div>
+           
+             <div className="bg-[#9F193F] hover:bg-[#7E1C32] mt-6 py-3 rounded-xl text-center cursor-pointer transition-colors duration-300">
+               <h3 className="text-white font-medium">Book a call</h3>
+             </div>
+           </div>
+           
             ))}
           </div>
         </div>

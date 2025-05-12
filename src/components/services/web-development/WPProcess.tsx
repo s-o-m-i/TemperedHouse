@@ -34,32 +34,35 @@ const WPProcess = () => {
       description:
         "We facilitate a seamless deployment process using continuous integration and delivery (CI/CD) pipelines. With meticulous server configurations and monitoring tools in place, we ensure a smooth and efficient launch, ensuring your application is production-ready."
     },
-    {
-      title: "7. Post-Launch Support & Continuous Maintenance",
-      description:
-        "After the successful launch, we offer ongoing support and maintenance services, ensuring that your application evolves with market trends and technological advancements. Our team is dedicated to optimizing your product’s performance, ensuring scalability, and maintaining a competitive edge."
-    }
+    // {
+    //   title: "7. Post-Launch Support & Continuous Maintenance",
+    //   description:
+    //     "After the successful launch, we offer ongoing support and maintenance services, ensuring that your application evolves with market trends and technological advancements. Our team is dedicated to optimizing your product’s performance, ensuring scalability, and maintaining a competitive edge."
+    // }
   ];
-  
+
 
   return (
     <>
-     <section className="py-20 px-8 md:px-16 bg-white">
-  <h2 className="text-[32px] sm:text-[42px] font-bold text-[#04213F] text-center">
-    Our Development Process
-  </h2>
-  <div className="flex justify-center">
-    <p className="text-base text-gray-600 sm:w-[65%] mt-5 text-center">
-      From concept to launch, our development process is designed to turn your ideas into impactful digital solutions. We follow a structured yet flexible approach that ensures every product we build is user-centric, scalable, and aligned with your business goals.
-    </p>
-  </div>
+      <section className="py-20 px-8 md:px-16 bg-white">
+        <h2 className="text-[32px] sm:text-[42px] font-bold text-[#04213F] text-center">
+          Our Development Process
+        </h2>
+        <div className="flex justify-center">
+          <p className="text-base text-gray-600 sm:w-[65%] mt-5 text-center">
+            From concept to launch, our development process is designed to turn your ideas into impactful digital solutions. We follow a structured yet flexible approach that ensures every product we build is user-centric, scalable, and aligned with your business goals.
+          </p>
+        </div>
 
-  <div className="mt-16 grid gap-10 sm:grid-cols-2">
-    {processSteps.map((step, index) => (
-     <FancyCard key={index} title={step.title} desc={step.description} />
-    ))}
-  </div>
-</section>
+        <div className="mt-16 grid gap-10 sm:grid-cols-12">
+          {processSteps.map((step, index) => (
+            <div className={`${index + 1 === processSteps.length ? "col-span-6" : "col-span-6"}`}>
+
+              <FancyCard key={index} title={step.title} desc={step.description} />
+            </div>
+          ))}
+        </div>
+      </section>
 
     </>
   )

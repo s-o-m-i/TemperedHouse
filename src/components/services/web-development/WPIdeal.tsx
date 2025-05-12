@@ -45,13 +45,13 @@ const WPIdeal = () => {
                     </p>
                 </div>
 
-                <div className="mt-20 grid grid-cols-2 gap-8">
+                <div className="mt-20 grid grid-cols-12 gap-8">
                     {cardContent.map((card, index) => (
 
 
-                        <div key={index} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-full border-t-4 border-t-[#fff]/50">
-                            <h3 className="text-xl font-semibold text-white mb-2"> {card.title}</h3>
-                            <p className="text-[#F9FAFB]">
+                        <div key={index} className={`bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-full border-t-4 border-t-[#fff]/50 ${index+1 === cardContent.length? "col-span-12":"col-span-6"}`}>
+                            <h3 className={`text-xl font-semibold text-white mb-2 ${index+1 === cardContent.length? "text-center":""}`}> {card.title}</h3>
+                            <p className={`text-[#F9FAFB] text-sm ${index+1 === cardContent.length? "text-center":""}`}>
                                 {card.description}
                             </p>
                             <div className="mt-4 border-t border-[#9F1940]/50 pt-2 text-sm text-[#F9FAFB]/80">
